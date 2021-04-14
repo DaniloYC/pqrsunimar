@@ -28,13 +28,13 @@
                         <input type="text" name="telefono" class="form-control" placeholder="Telefono" >
                         <br>
                         <select name="tipo" class="form-select">
-                            <option value="petición">Peticion</option>
+                            <option value="petición">Petición</option>
                             <option value="queja">Queja</option>
                             <option value="reclamo">Reclamo</option>
                             <option value="sugerencia">Sugerencia</option>
                         </select>
                         <br>
-                        <textarea name="descripcion" id="" rows="2" class="form-control" placeholder="Descripcion del mensaje"></textarea>
+                        <textarea name="descripcion" id="" rows="2" class="form-control" placeholder="Descripción del mensaje"></textarea>
                         <br>
                     </div>
                     <input type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-outline-success" name="registrar" value="Registrar">
