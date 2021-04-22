@@ -17,13 +17,13 @@
         </div>
         <div class="col-md-4">
             <div> <!-- se quito esta clase para centrar el input class="card card-body"-->
-                <form action="">
+                <form action="save_pqrs.php" method="POST">
                     <div class="form-group">
                         <input type="text" name="identificacion" class="form-control" placeholder="Identificacion" autofocus>
                         <br>
                         <input type="text" name="nombre" class="form-control" placeholder="Nombre" >
                         <br>
-                        <input type="text" name="correo" class="form-control" placeholder="Correo" >
+                        <input type="email" name="correo" class="form-control" placeholder="Correo" >
                         <br>
                         <input type="text" name="telefono" class="form-control" placeholder="Telefono" >
                         <br>
@@ -37,8 +37,16 @@
                         <textarea name="descripcion" id="" rows="2" class="form-control" placeholder="Descripción del mensaje"></textarea>
                         <br>
                     </div>
-                    <input type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-outline-success" name="registrar" value="Registrar">
+                    <input type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-outline-success" name="save_pqrs" value="Registrar">
+                    <br>
                 </form>
+
+                <?php if(isset($_SESSION['message'])) { ?>
+                    <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
+                        <?=$_SESSION['message'] ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php session_unset(); } ?>
             </div>
         </div>
     </div>
@@ -46,3 +54,5 @@
 </div>
 
 <?php include("includes/footer.php")?>
+
+<!--52:00-->
