@@ -24,13 +24,13 @@
                         <th>Tipo PQRS</th>
                         <th width="180">Mensaje</th>
                         <th>Fecha de Radicado</th>
-                        <th>Accion</th>
+                        <th width="106">Accion</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-
-                        $query = "SELECT * FROM registro";
+                        
+                        $query = "SELECT * FROM registro WHERE estado=1";
                         $resultado_registros=mysqli_query($conn, $query);
 
                         while($row = mysqli_fetch_array($resultado_registros)) { ?>
