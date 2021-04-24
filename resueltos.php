@@ -12,8 +12,7 @@
         </div>
     </div>
 </div>
-
-<div class="container" style="color:red;font-size:14px;background-color:#EFF8FB;">
+<div class="container" style="color:red;font-size:14px;background-color:#FBFBEF;">
 
     <div class="row">
     <?php if(isset($_SESSION['message'])) { ?>
@@ -34,13 +33,15 @@
                         <th>Tipo PQRS</th>
                         <th width="180">Mensaje</th>
                         <th>Fecha de Radicado</th>
+                        <th>Respuesta</th>
+                        <th>Fecha de Respuesta</th>
                         <th width="106">Accion</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                         
-                        $query = "SELECT * FROM registro WHERE estado=1";
+                        $query = "SELECT * FROM registro WHERE estado=2";
                         $resultado_registros=mysqli_query($conn, $query);
 
                         while($row = mysqli_fetch_array($resultado_registros)) { ?>
@@ -53,6 +54,8 @@
                                 <td><?php echo $row['tipo'] ?></td>
                                 <td><?php echo $row['mensaje'] ?></td>
                                 <td><?php echo $row['fecha_radicado'] ?></td>
+                                <td><?php echo $row['respuesta'] ?></td>
+                                <td><?php echo $row['fecha_respuesta'] ?></td>
                                 <td>
                                     <a href="edit.php?id=<?php echo $row['id_radicado'] ?>" class="btn btn-outline-info">
                                         <i class="far fa-edit"></i>
