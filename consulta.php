@@ -12,9 +12,8 @@
                 </div>
                     <input type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-outline-success" name="consultar" value="Consultar">
                     <br>
-                    <div class="col-md-2 mx-auto"><a href="index.php" class="btn btn-danger">Inicio</a></div>
+                    <div class="col-md-2 mx-auto"><a href="inicio.html" class="btn btn-danger">Inicio</a></div>
                     <br>
-                    
             </form>
         </div>
     </div>
