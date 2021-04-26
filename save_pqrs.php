@@ -30,7 +30,7 @@ if (isset($_POST['save_pqrs'])){
     
     $_SESSION['message'] = "Guarde su numero de radicado: ".$mensaje;
     $_SESSION['message_type'] = 'success';
-    header("Location: index.php");
+    header("Location: registro.php");
 }
 //"'.$identificacion.'","'.$nombre.'","'.$correo.'","'.$telefono.'","'.$tipo.'","'.$descripcion.'"
 ?>

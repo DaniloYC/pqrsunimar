@@ -14,7 +14,7 @@
 
 <nav class="navbar navbar-dark bg-dark">
 <div class="container">
-    <a href="inicio.html" class="navbar-brand">PQRS UNIMAR</a>
+    <a href="index.html" class="navbar-brand">PQRS UNIMAR</a>
 </div>
 
 </nav>
