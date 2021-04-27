@@ -30,7 +30,7 @@
 
         $query = "UPDATE registro set respuesta='$respuesta',fecha_respuesta='$fecha_respuesta',estado='$estado' WHERE id_radicado = $id";
         mysqli_query($conn, $query);
-        $_SESSION['message'] = "PQRS RESUELTO CON ID".$id;
+        $_SESSION['message'] = "PQRS RESUELTO CON REFERENCIA N°: ".$id;
         $_SESSION['message_type'] = 'warning';
         header("Location: admin.php");
     }
